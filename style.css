@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', Courier, monospace;
+    font-size: medium;
+    background-color: rgb(235, 235, 230);
+
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+               /* NAV BAR CSS */
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    background-color: white;
+}
+
+.head{
+    
+}
+
+.nav_bar img{
+    width: 30%;
+}
+
+.nav_list ul{
+    display: flex;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav_links a{
+    margin: 1rem;
+    margin-right: 3rem;
+    font-weight: bold;
+
+}
+
+.nav_links a:hover{
+    color:rgb(140, 199, 153)
+}
+
+
+
+             /* SECTION  */
+
+section .message{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    /* text-align: center; */
+}
+
+.image-header{
+    background-size: cover;
+    background-image: url(images/Geoscience.jpeg);
+    padding: 20rem;
+    padding-top: 15rem;
+    padding-bottom: 25rem;
+    height: 10rem;
+    margin-bottom: 40px;
+}
+
+section .gallery{
+    text-align: center;
+    
+}
+
+section .gallery a{
+    font-family:  Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: blue;
+    padding: 8px;
+    /* width: 100%; */
+    transition: transform 200ms
+}
+
+section .gallery a:hover{
+    background-color: rgb(41, 22, 148);
+    padding: 12px;
+    font-size: large;
+    transform: scale(1.5);
+}
+
+
+
+.message h4{
+    display: block;
+    font-family: 'Chakra Petch', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color:rgb(255, 255, 254);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-text{
+    margin: 100px 0px 50px 0px;
+}
+
+hr{
+    opacity: 0.7;
+}
+
+                        /* GALLERY PREVIEW */
+
+.welcome-text .text h1{
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+.image-section{
+    display: flex;
+}
+
+.image{
+    background-color: rgb(120, 168, 170);
+    padding-bottom: 1em;
+    /* margin-left: 60px;
+    margin-bottom: 50px; */
+    height: 100%;
+    border-radius: 10px;
+}
+
+.image img{
+    width: 100%;
+    border-radius: 7px;
+    /* object-fit: cover; */
+}
+
+
+.image p{
+    text-align: center;
+    font-family: 'Chakra Petch', Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+                    /* GALLERY PAGE */
+
+.welcome h1{
+    text-align: center;
+    font-family: 'Chakra Petch', Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    margin: 10rem;
+}
+
+section .photos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.photos .gallery-image{
+    width: 30%;
+    margin-bottom: 80px;
+}
+
+.photos .gallery-image img{
+    width: 100%;
+    height: auto;
+    border-color: bisque;
+}
+
+.photos .gallery-image:hover{
+    width: 350px;
+    transition: linear 250ms;
+}
+
+.gallery-image .title{
+    text-align: center;
+}
+
+.gallery-image .title h4{
+    font-family: 'Chakra Petch', Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-top: 4px;
+}
+
+
+
+            /* POP-UP GALLERY */
+
+.popup-image{
+  position: fixed;
+  top: 0; left:0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-image span{
+  position: absolute;
+  top:0;right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-image img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit:cover;
+
+
+}
+
+@media(max-width: 768px){
+  .popup-image img{
+    width: 95%;
+  }
+
+  .photos-container .photos{
+    display: inline;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+                        /* FOOTER */
+
+footer{
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+}
+
+footer .footer h3{
+    text-align: center;
+    font-size: large;
+}
